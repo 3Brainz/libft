@@ -17,6 +17,9 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	size_t index;
 
 	index = 0;
-	while (
-		)
+	if (!(s1[index] && s2[index]))
+		return (ft_memcmp(&s1[index], &s2[index], 1));
+	while (s1[index + 1] && s2[index + 1] && index < n)
+		index++;
+	return ft_memcmp(&s1[index], &s2[index], 1);
 }

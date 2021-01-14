@@ -12,6 +12,6 @@
 
 rule_1:
 	@echo "cooking first lib"
-	@gcc -c ft_*.c
+	@gcc -Werror -Wextra -Wall -c ft_*.c
 	@ar qc libft.a ft_*.o
 	@rm ft_*.o

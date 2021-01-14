@@ -21,9 +21,11 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 	vect1 = (t_uc*)s1;
 	vect2 = (t_uc*)s2;
 	index = 0;
-	while (index < n && vect2[index] == vect1[index])
+	while (index < n)
 	{
+		if (vect1[index] != vect2[index])
+			return((int)vect1[index] - (int)vect2[index]);
 		index++;
 	}
-	return((int)vect1[index] - (int)vect2[index]);
+	return((int)vect1[index-1] - (int)vect2[index-1]);
 }
