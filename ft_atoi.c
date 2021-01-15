@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static short	is_space(char c)
+static	short	is_space(char c)
 {
 	if (c == ' ' || c == '\f' || c == '\n' ||
 		c == '\r' || c == '\t' || c == '\v')
@@ -20,7 +20,7 @@ static short	is_space(char c)
 	return (0);
 }
 
-static short	is_sign(char c)
+static	short	is_sign(char c)
 {
 	if (c == '+' || c == '-')
 		return (1);
@@ -28,16 +28,16 @@ static short	is_sign(char c)
 		return (0);
 }
 
-static short	is_num(char c)
+static	short	is_num(char c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }
 
-static int		atoi_e_mammt(const char *str, int lenght, int sign)
+static	int		atoi_e_mammt(const char *str, int lenght, int sign)
 {
-	long 	num;
+	long	num;
 	int		multi;
 	char	c;
 
@@ -58,7 +58,7 @@ static int		atoi_e_mammt(const char *str, int lenght, int sign)
 	return (int)num;
 }
 
-int		ft_atoi(const char *str)
+int				ft_atoi(const char *str)
 {
 	unsigned int	index;
 	int				multiplex;

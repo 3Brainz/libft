@@ -14,8 +14,8 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	t_uc		*from;
-	t_uc		*to;
+	t_uc	*from;
+	t_uc	*to;
 	int		crement;
 	size_t	index;
 

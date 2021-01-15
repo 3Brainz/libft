@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static void *ft_memchr_rev(const void *s, int c, size_t n)
+static	void	*ft_memchr_rev(const void *s, int c, size_t n)
 {
 	t_uc		*vect;
 	t_uc		stop;
@@ -28,7 +28,7 @@ static void *ft_memchr_rev(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-char	*ft_strrchr(const char *s, int c)
+char			*ft_strrchr(const char *s, int c)
 {
 	return (ft_memchr_rev(s, c, ft_strlen(s) + 1));
 }

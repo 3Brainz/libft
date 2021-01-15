@@ -15,3 +15,6 @@ rule_1:
 	@gcc -Werror -Wextra -Wall -c ft_*.c
 	@ar qc libft.a ft_*.o
 	@rm ft_*.o
+
+norm:
+	norminette *.c
